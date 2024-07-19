@@ -9,7 +9,7 @@ body {
 .header {
   height: 72px;
   background: darkmagenta;
-  color: rgb(30, 23, 151);
+  color: rgb(255, 255, 255);
   font-size: 32px;
   font-weight: 900;
   padding: 10px;
@@ -17,6 +17,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
 }
 
 .header ul {
@@ -24,13 +25,18 @@ body {
   margin: 0;
   margin-left: 10px;
   margin-top: 10px;
-  display: flex;
   font-size: 15px;
   list-style-type: none;
+  display: flex;
+  gap: 10px;
+  color: rgb(214, 214, 214);
 }
 
-.header ul li {
-  margin-bottom: 20px;
+.header .left-side {
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  gap: 10px;
 }
 
 .footer {
