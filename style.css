@@ -25,7 +25,7 @@ body {
   margin: 0;
   margin-left: 10px;
   margin-top: 10px;
-  font-size: 15px;
+  font-size: 17px;
   list-style-type: none;
   display: flex;
   gap: 10px;
@@ -37,6 +37,12 @@ body {
   flex-direction: row;
   flex-shrink: 0;
   gap: 10px;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: bolder;
+  color: #F9FAF8;
 }
 
 .footer {
@@ -73,6 +79,22 @@ a {
   justify-content: space-evenly;
 }
 
+.top-content button {
+  flex-shrink: 0;
+  background-color: #3882F6;
+  color: #F9FAF8;
+  font-size: 15px;
+  border-radius: 10px;
+  width: 90px;
+  height: 40px;
+}
+
+.top-content .left-side {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
 .middle-content {
   flex: 1;  /* most important, makes the sidebar and card-collection stick to footer*/
   display: flex;
@@ -82,6 +104,7 @@ a {
 }
 
 .middle-content h2 {
+  font-size: 36px;
   margin: 10px auto;
 }
 
@@ -92,7 +115,7 @@ a {
   min-height: 200px;
 }
 .card .text {
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .card img {
@@ -101,8 +124,8 @@ a {
   border-radius: 20px;
   padding: 5px;
   margin: auto;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
 }
 
 .card img:hover {
@@ -142,5 +165,24 @@ a {
   margin: 0;
 }
 
+.sign-up {
+  background-color:  #3882F6;
+}
 
+.sign-up button {
+  font-size: 30px;
+  color: #F9FAF8;
+  border: 2px solid #F9FAF8;
+  background-color:  #3882F6;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+.sign-up button:hover {
+  color: #3882F6;
+  border: 2px solid #3882F6;
+  background-color:  #F9FAF8;
+  border: 2px solid rgba(56, 130, 246, 0.275);
+  box-shadow: 0px 0px 15px rgb(200, 200, 200);
+}
 /* * { border: 1px dashed red; } */
