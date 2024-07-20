@@ -23,8 +23,7 @@ body {
 .header ul {
   padding:0;
   margin: 0;
-  margin-left: 10px;
-  margin-top: 10px;
+  margin: 10px 0 0 10px;  /* top and left */
   font-size: 17px;
   list-style-type: none;
   display: flex;
@@ -99,7 +98,6 @@ a {
   flex: 1;  /* most important, makes the sidebar and card-collection stick to footer*/
   display: flex;
   flex-direction: column;
-  justify-items: center;
   margin-bottom: 0;
 }
 
@@ -166,23 +164,46 @@ a {
 }
 
 .sign-up {
+  color: #F9FAF8;
   background-color:  #3882F6;
+  min-width: 500px;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
 }
 
-.sign-up button {
+.sign-up a {
   font-size: 30px;
   color: #F9FAF8;
   border: 2px solid #F9FAF8;
   background-color:  #3882F6;
   border-radius: 10px;
   padding: 5px 10px;
+  width: 100px;
+  height: 100px;
+  margin: 0;
 }
 
-.sign-up button:hover {
+.sign-up a:hover {
   color: #3882F6;
   border: 2px solid #3882F6;
   background-color:  #F9FAF8;
   border: 2px solid rgba(56, 130, 246, 0.275);
   box-shadow: 0px 0px 15px rgb(200, 200, 200);
+}
+
+.details,
+.show,
+.hide:target {
+  display: none;
+}
+.hide:target + .show,
+.hide:target ~ .details {
+  display: block;
 }
 /* * { border: 1px dashed red; } */
